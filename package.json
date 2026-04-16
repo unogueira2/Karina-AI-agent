@@ -1,0 +1,22 @@
+{
+  "name": "karina-job-agent",
+  "version": "1.0.0",
+  "description": "Autonomous job application agent for AI Wordfinder",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "node src/setup.js",
+    "start": "node src/index.js",
+    "login": "node src/scripts/manual-login.js",
+    "test-match": "node src/scripts/test-match.js",
+    "stats": "node src/scripts/stats.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "playwright": "^1.48.0"
+  }
+}
